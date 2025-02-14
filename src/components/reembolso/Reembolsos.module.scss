@@ -1,0 +1,71 @@
+.headerReembolso{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    gap: 8px;
+    height: 10vh;
+}
+
+.mainReembolso{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.reembolsoTitle{
+    width: 934px;
+    margin-bottom: 32px;
+}
+.containerCards{
+    display: flex;
+    justify-content: space-between;
+    height: 209px;
+    width: 934px;
+}
+
+.inputCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #CBD4E1;
+    border-radius: 6px;
+    height: 209px;
+    width: 290px;
+}
+
+.containerStatus{
+    border: 1px solid #CBD4E1;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15%;
+    width: 934px;
+    margin: 32px 0px 32px 0px;
+}
+
+.statusCard{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.imgBackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 6px;
+    background-color: #00BEDD;
+}
+.atualization{
+    display: flex;
+    gap: 8px;
+    width: 934px;
+    color: #0844C4;
+    font-weight: 400;
+}
+
