@@ -1,0 +1,95 @@
+.mainContainer{
+    display: flex;
+}
+
+.backgroundLogin{
+    background-image: url("../../assets/Tela\ Login/background-login.png");
+    height: 100vh;
+    width: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainLogin{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+        height: 68vh;
+        width: 27.5vw;
+
+        .formHeader{
+            .formHeader img{
+                margin-bottom: 16px;
+            }
+
+            .mainTitle{
+                font-size: 2rem;
+                font-weight: 700;
+                color: #23282F;
+                margin-bottom: 8px;
+            }
+
+            .subTitle{
+                font-size: 1rem;
+                font-weight: 700;
+                color: #0844C4;
+            }
+        }
+
+        .forms{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            input{
+                height: 8.5vh;
+                width: 27vw;
+                border: 0.8px solid #CBD4E1;
+                border-radius: 6px;
+                padding: 12px 13px;
+            }
+
+            a{
+                font-size: 1rem;
+                font-weight: 400;
+                color: #23282F;
+            }
+
+            .formButtons{
+                display: flex;
+                justify-content: center;
+                gap: 0.5vw;
+                margin-top: 2rem;
+
+                button{
+                    height: 7.5vh;
+                    width: 8.5vw;
+                    color: #fff;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+
+                .loginIn{
+                    background-color: #001A3D;
+                }
+
+                .signUp{
+                    background-color: #00BEDD;
+                }
+            }
+        }
+    }
+}
