@@ -12,8 +12,16 @@ import NumbRejeitados from "../../assets/Dashboard/N-Rejeitados.png"
 import NumbSolicitados from "../../assets/Dashboard/N-solicitados.png"
 
 import Cloud from "../../assets/Dashboard/Sistema-atualizado.png"
+import { useNavigate } from "react-router-dom";
 
 function Reembolsos() {
+
+    const navigate = useNavigate()
+
+    const irParaSolicitacao = () => {
+        navigate("/solicitacao")
+    };
+
     return (
         <>
             <header className={styles.headerReembolso}>
@@ -29,7 +37,7 @@ function Reembolsos() {
                 </div>
 
                 <section className={styles.containerCards}>
-                    <article className={styles.inputCard}>
+                    <article onClick={irParaSolicitacao} className={styles.inputCard}>
                         <img src={Solicitar} alt="" />
                         <p>Solicitar Reembolso</p>
                     </article>
