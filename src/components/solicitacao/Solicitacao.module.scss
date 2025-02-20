@@ -1,7 +1,37 @@
-.headerSolicitacao{
+.headerSolicitacao {
     display: flex;
     align-items: center;
     padding: 1rem 1rem;
     gap: 8px;
     height: 10vh;
+}
+
+.mainSolicitacao {
+    display: flex;
+
+    .formSoliciatacao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        //border: 1px blue solid;
+    }
+
+    .grupo1 {
+        width: 35vw;
+        height: 25vh;
+        //border: 1px solid red;
+    }
+
+    .verticalBar {
+        width: 0.1vw;
+        border: solid #CBD4E1 1px;
+        height: 25vh;
+    }
+
+    .grupo2 {
+        height: 25vh;
+        width: 60vw;
+        //border: 1px solid green;
+    }
 }
