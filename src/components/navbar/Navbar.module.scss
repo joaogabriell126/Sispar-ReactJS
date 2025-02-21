@@ -3,7 +3,37 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 5vw;
+    width: 6vw;
     padding: 20px 0;
     height: 100vh;
+    //border: 1px solid red;
 }
+
+.sectionButtonsNavbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    //border: 1px solid green;
+}
+
+.boxButton{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+button{
+    background-color: #0844C4;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.exitButtonNavbar{
+    background-color: #63758D;
+}
+

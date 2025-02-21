@@ -1,3 +1,11 @@
+.solicitacaoLayout{
+    display: flex;
+}
+
+.solicitacaoContainer{ 
+    width: 94vw;
+    border: 1px solid violet;
+}
 .headerSolicitacao {
     display: flex;
     align-items: center;
@@ -13,8 +21,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        //border: 1px blue solid;
+        width: 95%;
+        border: 1px blue solid;
     }
 
     .grupo1 {
@@ -31,7 +39,7 @@
 
     .grupo2 {
         height: 25vh;
-        width: 60vw;
-        //border: 1px solid green;
+        width: 55vw;
+        border: 1px solid green;
     }
 }

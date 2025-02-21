@@ -14,6 +14,8 @@ import NumbSolicitados from "../../assets/Dashboard/N-solicitados.png"
 import Cloud from "../../assets/Dashboard/Sistema-atualizado.png"
 import { useNavigate } from "react-router-dom";
 
+import Navbar from "../navbar/Navbar.jsx"
+
 function Reembolsos() {
 
     const navigate = useNavigate()
@@ -23,77 +25,71 @@ function Reembolsos() {
     };
 
     return (
-        <>
-            <header className={styles.headerReembolso}>
-                <img src={Home} alt="" />
-                <img src={Seta} alt="" />
-                <p>Reembolsos</p>
-            </header>
+        <div className={styles.reembolsosLayout}>
+            <Navbar />
+            <div className={styles.reembolsosContainer}>
+                <header className={styles.headerReembolso}>
+                    <img src={Home} alt="" />
+                    <img src={Seta} alt="" />
+                    <p>Reembolsos</p>
+                </header>
+                <main className={styles.mainReembolso}>
+                    <div className={styles.reembolsoTitle}>
+                        <h1>Sistema de Reembolsos</h1>
+                        <p>Solicite novos pedidos de reembolso, visualize solicitações em análise e todo o histórico.</p>
+                    </div>
+                    <section className={styles.containerCards}>
+                        <article onClick={irParaSolicitacao} className={styles.inputCard}>
+                            <img src={Solicitar} alt="" />
+                            <p>Solicitar Reembolso</p>
+                        </article>
+                        <article className={styles.inputCard}>
+                            <img src={Analises} alt="" />
+                            <p>Verificar análises</p>
+                        </article>
+                        <article className={styles.inputCard}>
+                            <img src={Historico} alt="" />
+                            <p>Histórico</p>
+                        </article>
+                    </section>
+                    <section className={styles.containerStatus}>
+                        <article className={styles.statusCard}>
+                            <div className={styles.imgBackground}>
+                                <img src={NumbSolicitados} alt="" />
+                            </div>
+                            <h4>182</h4>
+                            <p>Solicitados</p>
+                        </article>
+                        <article className={styles.statusCard}>
+                            <div className={styles.imgBackground}>
+                                <img src={NumbAnalises} alt="" />
+                            </div>
+                            <h4>74</h4>
+                            <p>Em análises</p>
+                        </article>
+                        <article className={styles.statusCard}>
+                            <div className={styles.imgBackground}>
+                                <img src={NumbAprovados} alt="" />
+                            </div>
+                            <h4>195</h4>
+                            <p>Aprovados</p>
+                        </article>
+                        <article className={styles.statusCard}>
+                            <div className={styles.imgBackground}>
+                                <img src={NumbRejeitados} alt="" />
+                            </div>
+                            <h4>41</h4>
+                            <p>Rejeitados</p>
+                        </article>
+                    </section>
+                    <div className={styles.atualization}>
+                        <img src={Cloud} alt="" />
+                        <p>Sistema atualizado</p>
+                    </div>
+                </main>
+            </div>
 
-            <main className={styles.mainReembolso}>
-                <div className={styles.reembolsoTitle}>
-                    <h1>Sistema de Reembolsos</h1>
-                    <p>Solicite novos pedidos de reembolso, visualize solicitações em análise e todo o histórico.</p>
-                </div>
-
-                <section className={styles.containerCards}>
-                    <article onClick={irParaSolicitacao} className={styles.inputCard}>
-                        <img src={Solicitar} alt="" />
-                        <p>Solicitar Reembolso</p>
-                    </article>
-
-                    <article className={styles.inputCard}>
-                        <img src={Analises} alt="" />
-                        <p>Verificar análises</p>
-                    </article>
-
-                    <article className={styles.inputCard}>
-                        <img src={Historico} alt="" />
-                        <p>Histórico</p>
-                    </article>
-                </section>
-
-                <section className={styles.containerStatus}>
-                    <article className={styles.statusCard}>
-                        <div className={styles.imgBackground}>
-                            <img src={NumbSolicitados} alt="" />
-                        </div>
-                        <h4>182</h4>
-                        <p>Solicitados</p>
-                    </article>
-
-                    <article className={styles.statusCard}>
-                        <div className={styles.imgBackground}>
-                            <img src={NumbAnalises} alt="" />
-                        </div>
-                        <h4>74</h4>
-                        <p>Em análises</p>
-                    </article>
-
-                    <article className={styles.statusCard}>
-                        <div className={styles.imgBackground}>
-                            <img src={NumbAprovados} alt="" />
-                        </div>
-                        <h4>195</h4>
-                        <p>Aprovados</p>
-                    </article>
-
-                    <article className={styles.statusCard}>
-                        <div className={styles.imgBackground}>
-                            <img src={NumbRejeitados} alt="" />
-                        </div>
-                        <h4>41</h4>
-                        <p>Rejeitados</p>
-                    </article>
-                </section>
-
-                <div className={styles.atualization}>
-                    <img src={Cloud} alt="" />
-                    <p>Sistema atualizado</p>
-                </div>
-            </main>
-
-        </>
+        </div>
     )
 }
 

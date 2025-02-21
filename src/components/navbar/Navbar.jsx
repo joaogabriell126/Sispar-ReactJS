@@ -15,7 +15,7 @@ function Navbar() {
                     <img src={Close} alt="" />
                 </button>
 
-                <section>
+                <section className={styles.sectionButtonsNavbar}>
                     <img src={Perfil} alt="" />
                     <div className={styles.boxButton}>
                         <button>
@@ -35,8 +35,12 @@ function Navbar() {
                         </button>
                     </div>
                 </section>
-                <img src={ExitButton} alt="" />
+                <button className={styles.exitButtonNavbar}>
+                    <img src={ExitButton} alt="" />
+                </button>
             </nav>
         </>
     )
 }
+
+export default Navbar
