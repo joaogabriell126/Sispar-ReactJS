@@ -10,10 +10,10 @@ function Solicitacao() {
             <Navbar />
             <div className={styles.solicitacaoContainer}>
                 <header className={styles.headerSolicitacao}>
-                    <img src={Home} alt="" />
-                    <img src={Seta} alt="" />
+                    <img src={Home} />
+                    <img src={Seta} />
                     <p>Reembolsos</p>
-                    <img src={Seta} alt="" />
+                    <img src={Seta} />
                     <p>Solicitação</p>
                 </header>
                 <main className={styles.mainSolicitacao}>
@@ -23,33 +23,55 @@ function Solicitacao() {
                                 <label htmlFor="">Nome Completo</label>
                                 <input type="text" name="name" id="name" />
                             </div>
+
                             <div className={styles.inputEmpresa}>
                                 <label htmlFor="">Empresa</label>
                                 <input type="text" name="name" id="name" />
                             </div>
+
                             <div className={styles.inputPrestacao}>
                                 <label htmlFor="">N de Prest. Contas</label>
                                 <input type="number" name="name" id="name" />
                             </div>
+
                             <div className={styles.inputMotivo}>
                                 <label htmlFor="">Descrição / Motivo de Reembolso</label>
                                 <textarea name="" id=""></textarea>
                             </div>
                         </div>
                         <div className={styles.verticalBar}></div>
+
                         <div className={styles.grupo2}>
                             <div className={styles.inputData}>
                                 <label htmlFor="">Data</label>
                                 <input type="date" name="" id="" />
                             </div>
+
                             <div className={styles.despesas}>
-                                <label htmlFor=""> Tipo de Despesa</label>
-                                <select name="" id="">
-                                    <option value="">Selecionar </option>
-                                    <option value=""> Alimentação</option>
+                                <label htmlFor="despesas">Tipo de Despesa</label>
+                                <select name="despesas" id="despesas">
+                                    <option value="" disabled selected>Selecionar </option>
+                                    <option value="">Alimentação</option>
                                     <option value="">Combustível</option>
+                                    <option value="">Condução</option>
+                                    <option value="">Estacionamento</option>
+                                    <option value="">Viagem admin.</option>
+                                    <option value="">Viagem operacional</option>
+                                    <option value="">Eventos de representação</option>
                                 </select>
                             </div>
+
+                            <div className={styles.centroDeCustos}>
+                                <label htmlFor="centroCustos">Centro de Custos</label>
+                                <select name="centroCusto" id="centroCusto">
+                                    <option value="" disabled selected>Selecionar </option>
+                                    <option value="">1100109002 - FIN CONTROLES INTERNOS MTZ</option>
+                                    <option value="">1100110002 - FIN VICE-PRESIDENCIA FINANCAS MTZ</option>
+                                    <option value="">1100110102 - FIN CONTABILIDADE MTZ</option>
+                                </select>
+                            </div>
+
+
                         </div>
                     </form>
                 </main>
