@@ -18,7 +18,7 @@ function Login() {
                 <section className={styles.mainLogin}>
                     <div className={styles.mainContent}>
                         <div className={styles.formHeader}>
-                            <img src={logoImagem} />
+                            <img src={logoImagem} alt="Imagem da logotipo da empresa Wilson, Sons"/>
                             <h1 className={styles.mainTitle}>Boas vindas ao
                                 Novo Portal SISPAR</h1>
                             <p className={styles.subTitle}>Sistema de Emissão de Boletos e Parcelamento</p>

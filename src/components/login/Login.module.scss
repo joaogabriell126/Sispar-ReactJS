@@ -1,8 +1,10 @@
-.mainContainer{
+// 🖼️ LAYOUT PRINCIPAL
+.mainContainer {
     display: flex;
 }
 
-.backgroundLogin{
+// 🌆 SEÇÃO DE BACKGROUND (IMAGEM)
+.backgroundLogin {
     background-image: url("../../assets/Tela\ Login/background-login.png");
     height: 100vh;
     width: 60%;
@@ -11,13 +13,14 @@
     background-size: cover;
 }
 
-.mainLogin{
+// 🎯 Conteúdo principal do login
+.mainLogin {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .mainContent{
+    .mainContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,31 +30,33 @@
         height: 68vh;
         width: 27.5vw;
 
-        .formHeader{
-            .formHeader img{
+        // 🔹 CABEÇALHO DO FORMULÁRIO (Logo + Títulos)
+        .formHeader {
+            .formHeader img {
                 margin-bottom: 16px;
             }
 
-            .mainTitle{
+            .mainTitle {
                 font-size: 2rem;
                 font-weight: 700;
                 color: #23282F;
                 margin-bottom: 8px;
             }
 
-            .subTitle{
+            .subTitle {
                 font-size: 1rem;
                 font-weight: 700;
                 color: #0844C4;
             }
         }
-
-        .forms{
+        
+        // 📝 FORMULÁRIO DE LOGIN
+        .forms {
             display: flex;
             flex-direction: column;
             gap: 8px;
 
-            input{
+            input {
                 height: 8.5vh;
                 width: 27vw;
                 border: 0.8px solid #CBD4E1;
@@ -59,19 +64,19 @@
                 padding: 12px 13px;
             }
 
-            a{
+            a {
                 font-size: 1rem;
                 font-weight: 400;
                 color: #23282F;
             }
 
-            .formButtons{
+            .formButtons {
                 display: flex;
                 justify-content: center;
                 gap: 0.5vw;
                 margin-top: 2rem;
 
-                button{
+                button {
                     height: 7.5vh;
                     width: 8.5vw;
                     color: #fff;
@@ -82,11 +87,11 @@
                     cursor: pointer;
                 }
 
-                .loginIn{
+                .loginIn {
                     background-color: #001A3D;
                 }
 
-                .signUp{
+                .signUp {
                     background-color: #00BEDD;
                 }
             }
