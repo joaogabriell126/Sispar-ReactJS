@@ -10,6 +10,10 @@
     padding: 1rem 1rem;
     gap: 8px;
     height: 10vh;
+
+    p, .homeImage{
+        cursor: pointer;
+    }
 }
 
 .mainReembolso{

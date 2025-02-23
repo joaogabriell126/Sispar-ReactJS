@@ -29,7 +29,8 @@ function Reembolsos() {
             <Navbar />
             <div className={styles.reembolsosContainer}>
                 <header className={styles.headerReembolso}>
-                    <img src={Home} alt="" />
+                    <img className={styles.homeImage} onClick={() => {
+        navigate("/")}} src={Home} alt="" />
                     <img src={Seta} alt="" />
                     <p>Reembolsos</p>
                 </header>

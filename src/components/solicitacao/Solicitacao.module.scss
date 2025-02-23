@@ -1,34 +1,106 @@
-.solicitacaoLayout{
+.solicitacaoLayout {
     display: flex;
 }
 
-.solicitacaoContainer{ 
+.solicitacaoContainer {
     width: 94vw;
-    border: 1px solid violet;
 }
+
 .headerSolicitacao {
     display: flex;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 0rem 1rem;
     gap: 8px;
     height: 10vh;
+
+    p, .homeImage{
+        cursor: pointer;
+    }
 }
 
 .mainSolicitacao {
     display: flex;
+    padding: 0px 12px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
 
     .formSoliciatacao {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 95%;
-        border: 1px blue solid;
+        width: 100%;
+    }
+
+    select,
+    input,
+    textarea {
+        height: 40px;
+        padding: 3px 10px;
+        border: solid #CBD4E1 0.8px;
+        border-radius: 6px;
+        resize: none;
+    }
+
+    label {
+        color: #23282F;
+        font-weight: 700;
+        font-size: 0.85rem;
+    }
+
+    textarea {
+        height: 45px;
+    }
+
+    .inputMotivo,
+    .inputNome,
+    .inputEmpresa,
+    .inputPrestacao,
+    .inputMotivo,
+    .inputData,
+    .tipoDeDespesas,
+    .despesas,
+    .centroDeCustos,
+    .ordem,
+    .divisoes,
+    .pep,
+    .moedas,
+    .distancia,
+    .valorKm,
+    .faturado,
+    .despesas {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
     }
 
     .grupo1 {
-        width: 35vw;
+        width: 35%;
         height: 25vh;
-        //border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .inputNome {
+            width: 30%
+        }
+
+        .inputEmpresa {
+            width: 25%
+        }
+
+        .inputPrestacao {
+            width: 40%;
+        }
+
+        .inputMotivo {
+            width: 100%;
+
+            #motivos {
+                width: 100%;
+            }
+        }
     }
 
     .verticalBar {
@@ -39,7 +111,144 @@
 
     .grupo2 {
         height: 25vh;
-        width: 55vw;
-        border: 1px solid green;
+        width: 63%;
+        height: 25vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        //border: 1px solid black;
+
+        .inputData {
+            //border: solid green;
+            width: 20%;
+        }
+
+        .tipoDeDespesas {
+            //border: solid blue;
+            width: 24%;
+        }
+
+        //corrigir
+        .centroDeCusto {
+            //border: solid purple;
+            width: 45%;
+        }
+
+        .ordem,
+        .divisoes,
+        .pep,
+        .distancia {
+            //border: solid orange;
+            width: 9%;
+        }
+
+        .moeda,
+        .valorKm,
+        .faturado,
+        .despesas {
+            //border: solid rgb(16, 137, 80);
+            width: 9%;
+        }
+
+        .formButtonSolicitacao {
+            display: flex;
+            margin-left: 1rem;
+            //border: 1px solid green;
+            gap: 6px;
+
+            .saveButton {
+                //background-color: #001A3D;
+                width: 90px;
+                height: 40px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .delButton {
+                background-color: #00BEDD;
+                color: #fff;
+                width: 48px;
+                height: 40px;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    //Estilização da tabela
+    .tabela{
+        height: 45vh;
+        border: 0.8px solid #CBD4E1;
+        border-radius: 6px;
+    }
+
+    table {
+        width: 100%;
+        border: 0.8px solid #CBD4E1;
+        border-radius: 6px;
+        border-collapse: collapse;
+
+    }
+
+    th {
+        background-color: #e8ebf0;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    td, th {
+        border: 0.8px solid #CBD4E1;
+        text-align: center;
+        font-size: 13px;
+        padding: 0px 10px;
+        height: 6vh;
+    }
+
+    td img {
+        width: 17px;
+        vertical-align: middle;
+    }
+
+    .totalSolicitacao{
+        //border: 1px solid red;
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        gap: 10px;
+
+        .calculoTotal{
+            //border: 1px solid green;
+            width:150px;
+            
+            input{
+                height: 35px;
+                width: 140px;
+            }
+        }
+
+        .buttonTotalSolicitacao{
+            display: flex;
+            gap: 20px;
+            //border: 1px solid blue;
+            
+            button{
+                width: 200px;
+                height: 35px;
+            }
+
+            .submitAnalise{
+                background-color: #001A3D;
+                color: #fff;
+                font-size: 14px;
+            }
+
+            .cancelSolicitacao{
+                background-color: #A60B2F;
+                color: #fff;
+                font-size: 14px;
+            }
+        }
     }
 }

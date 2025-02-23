@@ -7,8 +7,13 @@ import HistoricoButton from "../../assets/Header/Botão - Histórico.png"
 import ExitButton from "../../assets/Header/Botão - Sair.png"
 import Close from "../../assets/Header/imagem-fechar-header.png";
 
+import { useNavigate } from "react-router-dom";
+
 function Navbar() {
-    return (
+        
+    const navigate = useNavigate()
+
+    return (       
         <>
             <nav className={styles.navbarContainer}>
                 <button>
@@ -18,7 +23,7 @@ function Navbar() {
                 <section className={styles.sectionButtonsNavbar}>
                     <img src={Perfil} alt="" />
                     <div className={styles.boxButton}>
-                        <button>
+                        <button onClick={() => { navigate("/reembolsos")}}>
                             <img src={HomeButton} alt="" />
                         </button>
 
@@ -35,7 +40,7 @@ function Navbar() {
                         </button>
                     </div>
                 </section>
-                <button className={styles.exitButtonNavbar}>
+                <button className={styles.exitButtonNavbar} onClick={() => { navigate("/")}}>
                     <img src={ExitButton} alt="" />
                 </button>
             </nav>
